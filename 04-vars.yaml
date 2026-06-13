@@ -1,9 +1,9 @@
 - name: variables
   hosts: web
   vars:
-    COURSE: ansible
-    TARINER: PERAIAH
-    DURATION: 10HRS
+    COURSE= DEVOPS
+    TARINER= PERAIAH
+    DURATION= 10HRS
 
   tasks:
   - name: print the data
