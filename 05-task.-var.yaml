@@ -1,0 +1,13 @@
+- name: variables
+  hosts: web
+  vars:
+    COURSE: DEVOPS
+    TARINER: PERAIAH
+    DURATION: 10HRS
+
+  tasks:
+  - name: print the data
+    vasr:
+      TARINER: peraiah
+    ansible.builtin.debug:
+      msg: "the course is: {{COURSE}}, tariner: {{TARINER}}, duration: {{DURATION}}"
