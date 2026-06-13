@@ -7,7 +7,7 @@
 
   tasks:
   - name: print the data
-    vasr:
+    vars:
       TARINER: peraiah
     ansible.builtin.debug:
       msg: "the course is: {{COURSE}}, tariner: {{TARINER}}, duration: {{DURATION}}"
