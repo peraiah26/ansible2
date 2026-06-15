@@ -1,0 +1,18 @@
+#!/bin/bash
+
+- name: variables in prompt
+  hosts: web
+  connection: local
+  vars_propt:
+  - name: username
+    prompt: what is your name?
+    private: false
+  
+  - name: passwd
+    prompt: enter the password:?
+    private: true
+
+  tasks:
+  - name: print the credetials
+    ansible.builtin.debug:
+      msg: "THE USERNAME IS: {{username}}, the password is: {{passwd}}"
