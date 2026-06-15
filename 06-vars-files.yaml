@@ -2,6 +2,7 @@
 
 - name: variables in files
   hosts: local
+  connects: local
   vars_files:
     course.yaml
   
