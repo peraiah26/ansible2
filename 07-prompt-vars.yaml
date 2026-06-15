@@ -3,7 +3,7 @@
 - name: variables in prompt
   hosts: web
   connection: local
-  vars_propt:
+  vars_prompt:
   - name: username
     prompt: what is your name?
     private: false
