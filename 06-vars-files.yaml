@@ -3,7 +3,7 @@
 - name: variables in files
   hosts: web
   vars_files:
-    course.yaml
+  - course.yaml
   
   tasks:
   - name: print course information
