@@ -1,8 +1,7 @@
 #!/bin/bash
 
 - name: variables in files
-  hosts: local
-  connects: local
+  hosts: web
   vars_files:
     course.yaml
   
