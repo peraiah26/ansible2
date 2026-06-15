@@ -9,7 +9,7 @@
     private: false
   
   - name: passwd
-    prompt: enter the password:?
+    prompt: enter the password?
     private: true
 
   tasks:

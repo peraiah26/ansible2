@@ -1,0 +1,9 @@
+#!/bin/bash
+
+- name: variables in files
+  hosts: web
+
+  tasks:
+  - name: print course information
+    ansible.builtin.debug:
+      msg: "THE COUSRE NAME IS: {{COURSE}}, TARINER NAME IS: {{TARINER}}, DURATION IS: {{DURATION}}"
