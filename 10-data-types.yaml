@@ -3,17 +3,17 @@
   connection: local
   vars:
     course: "linux"
-    is_live: true
-    duration: 10hr
+    is_live: "true"
+    duration: 10
 
     tools:
-    - unix
-    - os 
-    - rpm
+    - "unix"
+    - "os" 
+    - "rpm"
 
     services:
-      cloud: aws
-      so: kernel
+      cloud: "aws"
+      so: "kernel"
   tasks:
   - name: print the information
     ansible.builtin.debug:
