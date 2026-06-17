@@ -1,11 +1,11 @@
 - name: data types
   hosts: local 
-  connecton: local
+  connection: local
   vars:
     cousre: "linux"
     is_live: true
     duration: 10hr
-    
+
     tools:
     - unix
     - os 
@@ -17,4 +17,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "the couse is: {{ course }}, is_live?: {{ is_live }}, Duration: {{ duration }}, Tools are: {{ tools }}, Services are: {{ services }}, "
+      msg: "the couse is: {{ course }}, is_live?: {{ is_live }}, Duration: {{ duration }}, Tools are: {{ tools }}, Services are: {{ services }},"
