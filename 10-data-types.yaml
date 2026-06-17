@@ -6,10 +6,14 @@
     is_live: true
     duration: 10hr
     
-    tools: [ "unix", "os", "rpm"]
-     services:
-        cloud: aws
-        so: kernel
+    tools:
+    - unix
+    - os 
+    - rpm
+
+    services:
+      cloud: aws
+      so: kernel
   tasks:
   - name: print the information
     ansible.builtin.debug:
