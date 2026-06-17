@@ -2,7 +2,7 @@
   hosts: local 
   connection: local
   vars:
-    cousre: "linux"
+    course: "linux"
     is_live: true
     duration: 10hr
 
