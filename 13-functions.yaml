@@ -40,5 +40,5 @@
 
   - name: convert uppercase
     ansible.builtin.debug:
-      msg: "{{ name | upper }}"
+      msg: "{{ trainer | upper }}"
 
