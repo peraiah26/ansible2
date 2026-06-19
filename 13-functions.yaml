@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    technologies: linux, python, aws, devops, cloud
+    technologies: linux, python, aws, devops, cloud #string
     trainer: "peraiah tellagorla"
     gmail: tellagorla26@gmail.com
     ipaddress: "192.168.3.3"
@@ -30,6 +30,11 @@
     ansible.builtin.debug:
       msg: "Tags are: {{ tags | dict2items }}"
 
-  -   name: convert list into map
-      ansible.builtin.debug:
-        msg: "tag map: {{ listTags | items2dict }}"
+  - name: convert list into map
+    ansible.builtin.debug:
+      msg: "tag map: {{ listTags | items2dict }}"
+      
+  - name: read yaml and take it into variable
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup('file', 'student.yaml') | from_yaml }}"
+
