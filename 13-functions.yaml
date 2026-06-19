@@ -5,7 +5,7 @@
     technologies: linux, python, aws, devops, cloud #string
     trainer: "peraiah tellagorla"
     gmail: tellagorla26@gmail.com
-    ipaddress: "192.168.3.3"
+    ipaddress: "19222.168.3.3"
 
     tags:
       Application: payment
@@ -42,7 +42,7 @@
     ansible.builtin.debug:
       msg: "{{ trainer | upper }}"
 
-      
+
   - name: check IP is valid or not
     ansible.builtin.debug: 
       msg: "{{ ipaddress | ansible.utils.ipv4 }}"
