@@ -10,3 +10,7 @@
   - name: print the information
     ansible.builtin.debug:
       msg: "hello, {{ trainer | default('naresh') }}"
+  
+  - name: string into list
+    ansible.builtin.debug:
+      msg: "technologies are: {{ technologies | split(',') }}"
