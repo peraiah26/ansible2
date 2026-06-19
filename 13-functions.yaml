@@ -5,7 +5,7 @@
     technologies: linux, python, aws, devops, cloud
     trainer: "peraiah tellagorla"
     gmail: tellagorla26@gmail.com
-    ip address: 192.168.3.3
+    ipaddress: "192.168.3.3"
   tasks:
   - name: print the information
     ansible.builtin.debug:
