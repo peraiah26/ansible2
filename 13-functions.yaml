@@ -42,3 +42,8 @@
     ansible.builtin.debug:
       msg: "{{ trainer | upper }}"
 
+      
+  - name: check IP is valid or not
+    ansible.builtin.debug: 
+      msg: "{{ ipaddress | ansible.utils.ipv4 }}"
+
