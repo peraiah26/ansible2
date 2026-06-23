@@ -5,8 +5,8 @@
   - name: install packages
     ansible.builtin.debug:
       msg: "hello {{ item }}"
-      loop:
-      - peraiah
-      - ganesh
-      - rambabu
-      - gopi
+    loop:
+    - peraiah
+    - ganesh
+    - rambabu
+    - gopi
